@@ -220,7 +220,7 @@ public class daily_tracker extends AppCompatActivity {
                                 txt1.setText("-----------");
                                 txt2.setText("-----------");
                                 txt3.setText("-----------");
-                                Toast.makeText(daily_tracker.this, "record deleted", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(daily_tracker.this, "record Cleared", Toast.LENGTH_SHORT).show();
                             }
                         });
             }

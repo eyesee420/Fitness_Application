@@ -117,10 +117,12 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
+                android:id="@+id/tt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/card1"
                 android:paddingStart="15dp"
+                android:layout_marginBottom="5dp"
                 android:text="@string/nu1"
                 android:textColor="@color/nayblue">
 
@@ -130,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/navyblue"
-                android:layout_below="@id/card1"
+                android:layout_below="@id/tt1"
                 android:layout_marginTop="5dp"></View>
         </RelativeLayout>
         <RelativeLayout
