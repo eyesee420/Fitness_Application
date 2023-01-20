@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nutrition_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/nayblue">
+
+
+        <TextView
+            android:id="@+id/phn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="FITNESS APPLICATION"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/whitey"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_nav"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/homescree">
+
+    </ImageView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/image_view"
+        android:background="@color/nayblue"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+    </View>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="PROPER NUTRITION"
+                android:textColor="@color/nayblue"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                ></TextView>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Healthy Eating for a Healthy Weight"
+                android:textColor="@color/nayblue"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                ></TextView>
+
+
+            <LinearLayout
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:id="@+id/card1"
+                android:layout_marginTop="5dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/comfort">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/card1"
+                android:paddingStart="15dp"
+                android:text="@string/nu1"
+                android:textColor="@color/nayblue">
+
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navyblue"
+                android:layout_below="@id/card1"
+                android:layout_marginTop="5dp"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:id="@+id/card2"
+                android:layout_marginTop="5dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fruits">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_toRightOf="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nu2"
+                android:textColor="@color/nayblue"
+                android:paddingStart="15dp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navyblue"
+                android:layout_below="@id/t2"
+                android:layout_marginTop="5dp"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:id="@+id/card3"
+                android:layout_marginTop="5dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vegetable">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_toRightOf="@+id/card3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nu3"
+                android:textColor="@color/nayblue"
+                android:paddingStart="15dp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navyblue"
+                android:layout_below="@id/t3"
+                android:layout_marginTop="5dp"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:id="@+id/card4"
+                android:layout_marginTop="5dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/meat">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_toRightOf="@+id/card4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nu4"
+                android:textColor="@color/nayblue"
+                android:paddingStart="15dp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navyblue"
+                android:layout_below="@id/t4"
+                android:layout_marginTop="5dp"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:id="@+id/card5"
+                android:layout_marginTop="5dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/calcium">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/card5"
+                android:paddingStart="15dp"
+                android:text="@string/nu5"
+                android:textColor="@color/nayblue">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navyblue"
+                android:layout_below="@id/card5"
+                android:layout_marginTop="5dp"></View>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitey"
+        app:itemIconTint="@color/nayblue"
+        app:itemTextColor="@color/nayblue"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/user_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

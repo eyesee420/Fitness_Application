@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daily_tracker">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/nayblue">
+
+
+        <TextView
+            android:id="@+id/phn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="FITNESS APPLICATION"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/whitey"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:paddingStart="15dp"
+        android:id="@+id/monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_nav"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/nayblue"
+        android:textSize="16dp"
+        android:text="DAILY TRACKER ">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monday"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/nayblue"
+            android:paddingStart="35dp"
+            android:text="BREAKFAST MEAL"
+            android:textColor="@color/nayblue"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/nayblue"
+            android:paddingStart="35dp"
+            android:text="LUNCH MEAL"
+            android:textColor="@color/nayblue"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/nayblue"
+            android:paddingStart="35dp"
+            android:text="DINNER MEAL"
+            android:textColor="@color/nayblue"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </CheckBox>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/line1"
+        android:background="@color/navyblue"
+        android:layout_marginTop="40dp">
+
+
+    </View>
+
+    <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Today's Mealtime"
+    android:layout_below="@+id/view1"
+    android:layout_marginTop="20dp"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:textColor="@color/nayblue"
+    android:paddingStart="15dp"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/nayblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="-----------"
+        ></TextView>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:textColor="@color/nayblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="-----------"
+        ></TextView>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:textColor="@color/nayblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="-----------"
+        ></TextView>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation_users"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/box_style"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="clear records"
+        android:textColor="@color/navyblue">
+    </Button>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitey"
+        app:itemIconTint="@color/nayblue"
+        app:itemTextColor="@color/nayblue"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/user_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</RelativeLayout>

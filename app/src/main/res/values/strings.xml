@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Fitness Application</string>
+
+
+    <string name="step1">Avoid drinking water before meals. This can fill your stomach and make it harder to get in enough calories.</string>
+    <string name="step2">Eat more often. Squeeze in an additional meal or snack whenever you can, such as before bed.</string>
+    <string name="step3">Drink milk. Drinking whole milk to quench thirst can be a simple way to get in more high quality protein and calories.</string>
+    <string name="step4">Try weight gainer shakes. If you are having trouble gaining weight, consider weight gainer shakes. These are very high in protein, carbs, and calories.</string>
+    <string name="step5">Use bigger plates. Consider using large plates if you’re trying to get in more calories, as smaller plates can cause people to eat less .</string>
+    <string name="step6">Add cream to your coffee. This is a simple way to add in more calories</string>
+    <string name="step7">Get quality sleep. Sleeping properly is very important for muscle growth.</string>
+    <string name="step8">Eat your protein and fat source first. If you have a mix of foods on your plate, eat the calorie-dense and protein-rich foods first. Eat higher fiber foods like raw vegetables last.</string>
+    <string name="step9">Avoid smoking, and if you smoke, consider quitting. Smokers tend to weigh less than non-smokers, and quitting smoking often leads to weight gain .</string>
+    <string name="step10">Take creatine. The muscle-building supplement creatine monohydrate can help you gain a few pounds in muscle weight .</string>
+
+    <string name="nu1">Comfort Foods \nHealthy eating is all about balance. You can enjoy your favorite foods, even if they are high in calories, fat or added sugars. The key is eating them only once in a while and balancing them with healthier foods and more physical activity.</string>
+    <string name="nu2">Fruits \nFresh, frozen, or canned fruits are great choices. Try fruits beyond apples and bananas such as mango, pineapple or kiwi fruit. When fresh fruit is not in season, try a frozen, canned, or dried variety. Be aware that dried and canned fruit may contain added sugars or syrups. Choose canned varieties of fruit packed in water or in its own juice.</string>
+    <string name="nu3">Vegetables \nAdd variety to grilled or steamed vegetables with an herb such as rosemary. You can also sauté (panfry) vegetables in a non-stick pan with a small amount of cooking spray. Or try frozen or canned vegetables for a quick side dish—just microwave and serve. Look for canned vegetables without added salt, butter, or cream sauces. For variety, try a new vegetable each week.</string>
+    <string name="nu4">Meats \nIf your favorite recipe calls for frying fish or breaded chicken, try healthier variations by baking or grilling. Maybe even try dry beans in place of meats. Ask friends and search the internet and magazines for recipes with fewer calories ― you might be surprised to find you have a new favorite dish!</string>
+    <string name="nu5">Calcium-rich foods \nIn addition to fat-free and low-fat milk, consider low-fat and fat-free yogurts without added sugars. These come in a variety of flavors and can be a great dessert substitute.</string>
+
+
+</resources>
